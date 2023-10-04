@@ -1,0 +1,226 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with full transparency (invisible) */
+    }
+    100% {
+      opacity: 1; /* End with full visibility (fully visible) */
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+/* I have learn these animations on my own. I was going through sites and I saw an animation. It looked very beautiful to me. I thought lets learn it and how to make aniamtions using CSS. Here are reference links from I learned animations in CSS.
+
+Links :
+https://www.w3schools.com/css/css3_animations.asp
+https://web.dev/learn/css/animations/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
+
+Video:
+https://youtu.be/YszONjKpgg4?si=RZnlQsUq7rofdMht */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 0;
+}
+
+nav {
+    background-color: #00ffff;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #000000;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 5px #000000;
+}
+
+a{
+   text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    animation: bounceIn 0.5s ease-out;;
+}
+footer {
+    background-color: #00ffff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.img-container{
+    float: left;
+    padding:20px;
+
+}
+
+.profile-image{
+    height: 750px;
+    width: 300px;
+    box-shadow: 0 0 20px #000000;
+    animation: fadeIn 1s ease-in;
+}
+
+main{
+    display: flex;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.main-container{
+    margin: 10px;
+    padding-right: 5px;
+}
+
+p{
+    text-align: justify;
+    font-size: large;
+    line-height: 30px;
+    word-spacing: 1.75px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.about-container{
+    margin: 20px;
+}
+
+li{
+    font-size: large;
+    line-height: 30px;
+    word-spacing: 1.75px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.ordered-list{
+    margin: 0;
+    font-size: medium;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+
+h2{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.details{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.heading{
+    color: #000000;
+    display: block;
+    font-size: larger;
+}
+
+.editedVideos{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex : auto ;
+}
+.video{
+    margin: 8px;
+}
+
+.project-container{
+    margin: 20px;
+}
+
+.main_container {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000000;
+    background-color: #c5ffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .project-img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000000;
+  }
+  .image-container {
+    margin: 10px;
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+  }
+  
+  .text-container {
+    margin: 10px;
+    flex: 1; 
+  }
+
+
+/* For tablet view */
+@media screen and (max-width:1024px){
+.image-container{
+    float: none;
+}
+
+.img-container{
+    float: none;
+}
+
+.editedVideos{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+
+/* For mobile view */
+@media screen and (max-width:720px){
+.index-main{
+    display: block;
+}
+
+.img-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+}
