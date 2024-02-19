@@ -83,13 +83,10 @@ footer {
 }
 
 .profile-image{
-    height: 650px;
-    width: 400px;
-    
+    height: 800px;
+    width: 500px;
     box-shadow: 0 0 20px #000000;
     animation: fadeIn 1s ease-in;
-    /* 
-     */
 }
 
 main{
